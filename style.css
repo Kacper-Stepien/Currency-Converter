@@ -1,0 +1,119 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
+
+:root {
+    --first-color: #70e000;
+    --second-color: #fff;
+    --third-color: #253237;
+}
+
+*,
+*::after,
+*::before {
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-family: 'Rubik', sans-serif;
+    font-size: 1.6rem;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--first-color);
+}
+
+header {
+    color: var(--second-color);
+    font-size: 2.5rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 4rem;
+    letter-spacing: 2px;
+}
+
+header i {
+    color: var(--third-color);
+    font-size: 6rem;
+    margin-right: 1rem;
+}
+
+main {
+    background-color: var(--second-color);
+    padding: 4rem;
+    border-radius: 12px;
+    box-shadow: 1px 1px 50px rgba(0, 0, 0, 0.3);
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.top-container {
+
+    padding-bottom: 2rem;
+}
+
+.middle-container {
+
+    padding-bottom: 2rem;
+}
+
+.currency {
+    font-size: 2rem;
+    padding: 1rem 2rem;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    background-color: transparent;
+    background-color: rgba(239, 239, 239, 0.5);
+    margin-right: 4rem;
+    cursor: pointer;
+}
+
+.amount {
+    background-color: rgba(239, 239, 239, 0.5);
+    font-size: 2rem;
+    border: none;
+    border-radius: 12px;
+    outline: none;
+    padding: 1rem 2rem;
+    text-align: right;
+}
+
+.swap-btn {
+    font-size: 1.6rem;
+    padding: 1.4rem;
+    border: none;
+    border-radius: 50%;
+    background-color: #253237;
+    color: #fff;
+    transform: rotate(90deg);
+    margin-left: 2rem;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: all .2s ease;
+}
+
+.swap-btn:hover {
+    cursor: pointer;
+    transform: scale(1.1) rotate(90deg);
+    filter: brightness(1.2);
+}
+
+.message {
+    color: var(--third-color);
+    padding: 1rem;
+    border-radius: 12px;
+    letter-spacing: 1px;
+}
