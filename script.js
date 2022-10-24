@@ -8,16 +8,6 @@ const secondAmountInput = document.getElementById('amount-bottom');
 const swapBtn = document.getElementById('swap-btn');
 const infoAboutConvertion = document.getElementById('message');
 
-// console.log(firstCurrencyChoice);
-// console.log(secondCurrencyChoice);
-// console.log(firstAmount);
-// console.log(secondAmount);
-// console.log(swapBtn);
-// console.log(infoAboutConvertion);
-
-let dataAboutFirstCurrency;
-
-countConversionRate();
 
 function countConversionRate() {
 
@@ -41,11 +31,10 @@ function swapCurrencies() {
     countConversionRate();
 }
 
-// fetch(`https://v6.exchangerate-api.com/v6/5582e59fe0b45cb9c5f85941/latest/USD`)
-//     .then(data => data.json())
-//     .then(data => console.log(data));
 
 firstCurrencyInput.addEventListener('change', countConversionRate);
 secondCurrencyInput.addEventListener('change', countConversionRate);
 firstAmountInput.addEventListener('change', countConversionRate);
 swapBtn.addEventListener('click', swapCurrencies);
+
+countConversionRate();
