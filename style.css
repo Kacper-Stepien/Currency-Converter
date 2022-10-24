@@ -37,12 +37,17 @@ header {
     justify-content: center;
     margin-bottom: 4rem;
     letter-spacing: 2px;
+
 }
 
 header i {
     color: var(--third-color);
     font-size: 6rem;
     margin-right: 1rem;
+}
+
+header h1 {
+    display: inline-block;
 }
 
 main {
@@ -116,4 +121,47 @@ main {
     padding: 1rem;
     border-radius: 12px;
     letter-spacing: 1px;
+}
+
+@media only screen and (max-width: 660px) {
+    html {
+        font-size: 55%;
+    }
+
+    header {
+        margin: 3rem 2rem;
+    }
+}
+
+@media only screen and (max-width: 460px) {
+
+    .top-container,
+    .bottom-container {
+        flex-direction: column-reverse;
+        align-items: flex-end;
+        padding: 1.5rem;
+    }
+
+    main {
+        width: 100%;
+        border-radius: 0;
+        padding: 2rem;
+    }
+
+    header {
+        font-size: 2rem
+    }
+
+    .middle-container {
+        padding: 1.5rem;
+    }
+
+    .currency {
+        margin-right: 0;
+        margin-top: 1rem;
+    }
+
+    .amount {
+        width: 100%;
+    }
 }
